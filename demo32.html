@@ -19,10 +19,36 @@
   padding-top: -0.3rem;
   padding-bottom: 0.6rem;
   margin-top: 10%;
+}
+.card-with-background {
+  position: relative;
+  width: 100%px;
+  height: 338px;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 2; /* Adjust the overlay opacity as needed */
+  background-color: rgba(36, 75, 90, 0.90);
+  border-radius: 21px;
+}
+
+.card-body {
+  position: relative;
+  z-index: 1;
+}
   
  
   
 </style>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -106,7 +132,7 @@
       <!-- /.navbar -->
       <div class="offcanvas offcanvas-end text-inverse" id="offcanvas-info" data-bs-scroll="true" style="background-image: linear-gradient(0deg,#ffff,#fff);">
         <div class="offcanvas-header">
-          <h3 class="text-white fs-30 mb-0">Sandbox</h3>
+          <h3 class="text-white fs-30 mb-0">Land Expeditions</h3>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body pb-6">
@@ -150,11 +176,11 @@
       <!-- /.offcanvas -->
     </header>
     <!-- /header -->
-    <section class="wrapper gradient-8 bg-lines" style="background-image: url('assets-new/hero-page.jpeg');">
+    <section class="wrapper gradient-8 bg-lines" style="background-image: url('assets-new/hero-page.jpeg');background-size:cover;background-position: center center;">
       <div class="container pt-17 pt-md-16 pb-12 pb-lg-16 text-center">
         <div class="row">
           <div class="col-lg-10 col-xl-9 col-xxl-8 mx-auto" data-cues="zoomIn" data-group="page-title" data-interval="-200" data-delay="500">
-            <h1 style="color:black" class="display-1 fs-68 lh-xxs mb-8 text-black">Streamline Your Journey With <span >Land Expeditions</span> </h1>
+            <h3 style="color:black" class="display-1 fs-68 lh-xxs mb-8 text-black">Streamline Your Journey With <span >Land Expeditions</span> </h3>
             <p style="color: black;font-weight:200px;">With our innovative solutions, we empower hospitality operators to unlock the full potential of their offerings and leave a lasting impression on every guest.</p>
             <div class="d-flex justify-content-center mb-4" data-cues="zoomIn" data-group="page-title-buttons" data-delay="900">
               <span><a style="background-color: grey;color:black;border-color:grey;" href="#" class="btn btn-lg btn-white">Request a Demo</a></span>
@@ -383,19 +409,95 @@
     </section>
 <!-- /section -->
 <!-- /.swiper-container -->
-    
-    
-    <!-- /section -->
+<section id="snippet-1" style="background: #F6F6F6;" class="wrapper  wrapper-border">
+  <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
+    <h2 style="text-align: center;" class="display-4 mb-3">Benefit Today And Grow Your Buisness</h2>
 
-    <!-- /section -->
- 
-    <!-- /section -->
+
+  <div class="container">
+    <div class="row">
+      <!-- First Column -->
+      <div class="col-md-6" style="padding-left:12%;">
+        <div class="card-with-background">
+          <div class="card-overlay" style="background-image: linear-gradient(0deg, rgba(36, 75, 90, 0.90) 0%, rgba(36, 75, 90, 0.90) 100%), url(./assets-new/case-studies/casestudy-1.jpeg)"></div>
+          <div class="card-body">
+            <a href="#" style="margin: 3%;" class="btn btn-white rounded-pill">Case Study</a>
+          </div>                
+        </div>
+
+        <h2 style="padding-top:10%">Increase Retention With
+          Better customer Experience</h2>
+          <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ex ipsum, rhoncus sed sollicitudin eget, cursus ultricies magna. Vestibulum porttitor</p>
+          <a href>Learn More</a>
+          
+      </div>
+  
+      <!-- Second Column -->
+      <div class="col-md-6">
+        <div class="row">
+          <!-- First Sub-column -->
+          <div class="col-md-6" >
+            <div class="card-with-background" style="width:299px;height:220px;">
+              <div class="card-overlay" style="background-image: linear-gradient(0deg, rgba(36, 75, 90, 0.90) 0%, rgba(36, 75, 90, 0.90) 100%),url(./assets-new/case-studies/case2study2.jpeg)"></div>
+              <div class="card-body">
+                <a href="#" style="margin: 3%;" class="btn btn-white rounded-pill">Case Study</a>
+                <p style="color:white;text-align: left;
+                align-items: baseline;
+                margin-top: 25%;
+                margin-left: 5%;">Building a Brand using Land Expeditions platform/Services</p>
+              </div>                
+            </div>
+              <div class="card mt-3">
+                <div class="card-with-background" style="width:299px;height:220px;">
+                  <div class="card-overlay" style="background-image: linear-gradient(0deg, rgba(36, 75, 90, 0.90) 0%, rgba(36, 75, 90, 0.90) 100%),url(./assets-new/case-studies/casestudy3.jpeg)"></div>
+                  <div class="card-body">
+                    <a href="#" style="margin: -12%;" class="btn btn-white rounded-pill">Case Study</a>
+                    <p style="color:white;text-align: left;
+                align-items: baseline;
+                margin-top: 35%;
+                margin-left: -13%;">Building a Brand using Land Expeditions platform/Services</p>
+                  </div>                
+                </div>
+              </div>
+          </div>
+  
+          <!-- Second Sub-column -->
+          <div class="col-md-6">
+            <div class="card-with-background" style="width:299px;height:220px;">
+              <div class="card-overlay" style="background-image: linear-gradient(0deg, rgba(36, 75, 90, 0.90) 0%, rgba(36, 75, 90, 0.90) 100%),url(./assets-new/case-studies/casestudy4.jpeg)"></div>
+              <div class="card-body">
+                <a href="#" style="margin: 3%;" class="btn btn-white rounded-pill">Case Study</a>
+                <p style="color:white;text-align: left;
+                align-items: baseline;
+                margin-top: 25%;
+                margin-left: 5%;">Connect to customers and retain
+                older ones with better CRM</p>
+              </div>                
+            </div>
+            <div class="card mt-3">
+              <div class="card-with-background" style="width:299px;height:220px;"> 
+                <div class="card-overlay "style="background-image: linear-gradient(0deg, rgba(36, 75, 90, 0.90) 0%, rgba(36, 75, 90, 0.90) 100%),url(./assets-new/case-studies/casestudy3.jpeg)"></div>
+                <div class="card-body">
+                  <a href="#" style="margin: -12%;" class="btn btn-white rounded-pill">Case Study</a>
+                  <p style="color:white;text-align: left;
+                  align-items: baseline;
+                  margin-top: 30%;
+                  margin-left: -13%;">Connect to customers and retain
+                  older ones with better CRM</p>
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- /.container -->
+</section>
     
-    <!-- /section -->
-   
-    <!-- /section -->
-    
-    <!-- /section -->
+  
     
     <section id="testimonials" class="wrapper bg-white">
       <div class="container py-14 py-md-16">
